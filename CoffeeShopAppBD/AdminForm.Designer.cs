@@ -127,7 +127,7 @@
             // saveBtn
             // 
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(282, 28);
+            this.saveBtn.Size = new System.Drawing.Size(185, 22);
             this.saveBtn.Text = "Сохранить изменения";
             this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
