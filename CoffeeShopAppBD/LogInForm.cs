@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace CoffeeShopAppBD
 {
-    public partial class LogInForm : Form
+    public partial class LogInForm : MaterialForm
     {
         private Class1 db = new Class1();
 
@@ -19,6 +21,11 @@ namespace CoffeeShopAppBD
         {
 
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Brown700, Primary.Brown900, Primary.Brown500, Accent.Orange400, TextShade.WHITE);
         }
 
        

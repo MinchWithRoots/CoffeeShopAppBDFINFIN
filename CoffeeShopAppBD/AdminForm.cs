@@ -4,10 +4,12 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace CoffeeShopAppBD
 {
-    public partial class AdminForm : Form
+    public partial class AdminForm : MaterialForm
     {
         private Class1 db = new Class1();
 
@@ -16,6 +18,11 @@ namespace CoffeeShopAppBD
             InitializeComponent();
             // Подписка на событие выбора элемента в ComboBox
             comboTables.SelectedIndexChanged += ComboTables_SelectedIndexChanged;
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Brown700, Primary.Brown900, Primary.Brown500, Accent.Orange400, TextShade.WHITE);
         }
 
         private void AdminForm_Load(object sender, EventArgs e)

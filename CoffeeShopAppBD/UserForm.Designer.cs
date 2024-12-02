@@ -40,7 +40,7 @@
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(119, 105);
+            this.dataGridView.Location = new System.Drawing.Point(109, 148);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.Size = new System.Drawing.Size(557, 202);
@@ -48,7 +48,7 @@
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(527, 40);
+            this.searchTextBox.Location = new System.Drawing.Point(537, 79);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(193, 20);
             this.searchTextBox.TabIndex = 1;
@@ -67,7 +67,7 @@
             // filterComboBox
             // 
             this.filterComboBox.FormattingEnabled = true;
-            this.filterComboBox.Location = new System.Drawing.Point(55, 27);
+            this.filterComboBox.Location = new System.Drawing.Point(42, 78);
             this.filterComboBox.Name = "filterComboBox";
             this.filterComboBox.Size = new System.Drawing.Size(255, 21);
             this.filterComboBox.TabIndex = 3;

@@ -3,16 +3,23 @@ using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace CoffeeShopAppBD
 {
-    public partial class RegistrationForm : Form
+    public partial class RegistrationForm : MaterialForm
     {
         private Class1 db = new Class1();
 
         public RegistrationForm()
         {
             InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Brown700, Primary.Brown900, Primary.Brown500, Accent.Orange400, TextShade.WHITE);
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -117,6 +124,26 @@ namespace CoffeeShopAppBD
         }
 
         private void RegistrationForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
